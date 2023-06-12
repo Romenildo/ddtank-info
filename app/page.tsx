@@ -1,8 +1,13 @@
+import Content from "./components/template/content";
+import Footer from "./components/template/footer";
+import Header from "./components/template/header";
 
 export default function Home() {
   return (
-    <div>
-      Inicio
-    </div>
+    <>
+        <Header/>
+        <Content/>
+        <Footer/>
+    </>
   )
 }
