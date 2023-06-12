@@ -11,7 +11,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className='bg-gray'>
       <body className='w-[980px] flex flex-col m-auto'>{children}</body>
     </html>
   )

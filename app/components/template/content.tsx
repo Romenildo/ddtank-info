@@ -6,8 +6,9 @@ interface ContentProps {
 
 const Content = (props: ContentProps) =>{
     return (
-        <main className="bg-green-500 border-[3px] border-orange-800">
+        <main className="bg-ddSec border-[3px] border-ddFirst">
             Content
+
         </main>
     )
 }

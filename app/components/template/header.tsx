@@ -1,3 +1,4 @@
+import NavBar from "./navbar"
 
 
 interface HeaderProps {
@@ -6,8 +7,11 @@ interface HeaderProps {
 
 const Header = (props: HeaderProps) =>{
     return (
-        <header className="bg-green-300 h-[200px] border-[3px] border-orange-800">
-            Header
+        <header className="bg-ddFirst h-[200px] border-[3px] border-ddFirst">
+            <div>
+                Header
+            </div>
+            <NavBar/>
         </header>
     )
 }
