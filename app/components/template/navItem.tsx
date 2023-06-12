@@ -13,7 +13,7 @@ const NavItem = (props: NavItemProps) =>{
         <Link href={props.href}
         
         className={`
-        px-6 pb-1 pt-6
+        px-5 pb-1 pt-5
         bg-ddFour font-bold text-ddFive text-xl
         border-2 border-ddTer rounded-t-3xl
         hover:scale-[1.1] hover:cursor-pointer hover:text-white

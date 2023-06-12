@@ -1,3 +1,4 @@
+import CalenderContent from "./calender/calenderContent"
 
 
 interface ContentProps {
@@ -7,7 +8,7 @@ interface ContentProps {
 const Content = (props: ContentProps) =>{
     return (
         <main className="bg-ddSec border-[3px] border-ddFirst">
-            Content
+            <CalenderContent/>
 
         </main>
     )
