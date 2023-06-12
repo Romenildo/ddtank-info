@@ -1,8 +1,9 @@
+'use client'
 import CardCalender from "./cardCalender"
 
 
 interface CalenderProps {
-
+    dayDungeons: any
 }
 
 const Calender = (props: CalenderProps) =>{

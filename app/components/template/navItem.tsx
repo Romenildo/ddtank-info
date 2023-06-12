@@ -1,5 +1,6 @@
-import Link from "next/link"
+'use client'
 
+import { Link } from "react-router-dom"
 
 interface NavItemProps {
     children: any
@@ -10,16 +11,16 @@ interface NavItemProps {
 
 const NavItem = (props: NavItemProps) =>{
     return (
-        <Link href={props.href}
-        
-        className={`
-        px-5 pb-1 pt-5
-        bg-ddFour font-bold text-ddFive text-xl
-        border-2 border-ddTer rounded-t-3xl
-        hover:scale-[1.1] hover:cursor-pointer hover:text-white
-        ${props.active && 'bg-ddactive text-white scale-[1.1]'}
-        `}
-        onClick={props.onClick}
+        <Link 
+            to={props.href}
+            className={`
+            px-5 pb-1 pt-5
+            bg-ddFour font-bold text-ddFive text-xl
+            border-2 border-ddTer rounded-t-3xl
+            hover:scale-[1.1] hover:cursor-pointer hover:text-white
+            ${props.active && 'bg-ddactive text-white scale-[1.1]'}
+            `}
+            onClick={props.onClick}
         >{props.children}</Link>
     )
 }

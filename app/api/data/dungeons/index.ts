@@ -2,7 +2,7 @@
 
 
 export const dungeonsWeek = {
-    sunday:{
+    monday:{
         teasure:[{name:"ancient", img: 'images/dungeons/teasure/ancient.png' },
                  {name:"future", img: 'images/dungeons/teasure/future.png'}],
         multiplayer:[{name:"pirateCamp", img: 'images/dungeons/multiplayer/pirateCamp.png' }],
@@ -12,3 +12,4 @@ export const dungeonsWeek = {
         corredor:[{name:"evilMage", img: 'images/dungeons/corridor/evilMage.png' }],
     }
 }
+
