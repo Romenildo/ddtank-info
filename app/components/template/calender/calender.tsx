@@ -7,44 +7,54 @@ interface CalenderProps {
 }
 
 const Calender = (props: CalenderProps) =>{
+    console.log(props.dayDungeons)
+
+    const renderCards = (items: any) => {
+        return(
+            <>
+                {items.map((item:any)=>(
+                    <CardCalender isImage={item.img} alt={item.name} key={item.name} />
+                ))}
+            </>
+        )
+    }
     return (
         <div>
-            <h1 className="text-2xl font-bold text-ddFive p-3">Segunda-Feira</h1>
+            <h1 className="text-2xl font-bold text-ddFive p-3">{props.dayDungeons.name}</h1>
 
             <div className="flex gap-4">
                 <CardCalender>Tesouro</CardCalender>
-                <CardCalender isImage="images/dungeons/teasure/ancient.png" alt="evilMage"/> 
-                <CardCalender isImage="images/dungeons/teasure/future.png" alt="evilMage"/> 
+                {renderCards(props.dayDungeons.teasure)}
             </div>
 
             <div className="w-11/12 border-t-2 border-ddFirst m-auto" />
             <div className="flex gap-4">
                 <CardCalender>Multijogador</CardCalender>
-                <CardCalender isImage="images/dungeons/multiplayer/pirateCamp.png" alt="evilMage"/> 
+                {renderCards(props.dayDungeons.multiplayer)}
             </div>
 
             <div className="w-11/12 border-t-2 border-ddFirst m-auto" />
             <div className="flex gap-4">
                 <CardCalender>Elemental</CardCalender>
-                <CardCalender isImage="images/dungeons/elemental/earth.png" alt="evilMage"/>  
+                {renderCards(props.dayDungeons.element)}
             </div>
 
             <div className="w-11/12 border-t-2 border-ddFirst m-auto" />
             <div className="flex gap-4">
                 <CardCalender>Mundo Bogu</CardCalender>
-                <CardCalender isImage="images/dungeons/boguWorld/royalGuard.png" alt="evilMage"/> 
+                {renderCards(props.dayDungeons.boguWorld)}
             </div>
 
             <div className="w-11/12 border-t-2 border-ddFirst m-auto" />
             <div className="flex gap-4">
                 <CardCalender>Colosso</CardCalender>
-                <CardCalender>image</CardCalender> 
+                {renderCards(props.dayDungeons.colossus)}
             </div>
 
             <div className="w-11/12 border-t-2 border-ddFirst m-auto" />
             <div className="flex gap-4">
                 <CardCalender>Corredor</CardCalender>
-                <CardCalender isImage="images/dungeons/corridor/evilMage.png" alt="evilMage"/> 
+                {renderCards(props.dayDungeons.corridor)}
             </div>
             
             
