@@ -1,4 +1,5 @@
-'use client'
+"use client";
+import { BrowserRouter } from "react-router-dom";
 
 import Footer from "./components/template/footer";
 import Header from "./components/template/header";
@@ -9,14 +10,14 @@ import Main from "./pages/main";
 
 export default function Home() {
   return (
-    <>
-        <Header/>
-        <Routes>
-          <Route path="/" element={<Main/>}/>
-          <Route path="/calender" element={<CalenderContent/>}/>
-        </Routes>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/calender" element={<CalenderContent />} />
+      </Routes>
 
-        <Footer/>
-    </>
-  )
+      <Footer />
+    </BrowserRouter>
+  );
 }
