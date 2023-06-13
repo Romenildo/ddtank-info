@@ -22,6 +22,7 @@ const CalenderContent = (props: CalenderContentProps) =>{
                         ${currentDay.id === item.id && "bg-ddFirst text-ddSec border-none"}
                     `}
                         onClick={()=>{setCurrentDay(dungeonsWeek[item.id])}}
+                        key={item.id}
                     >{item.day}</button>
                 ))}
             </div>
