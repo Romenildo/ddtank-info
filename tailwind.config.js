@@ -21,5 +21,11 @@ module.exports = {
       
     },
   },
+  safelist:[
+    'bg-[#f87171]',
+    'bg-[#3b82f6]',,
+    'bg-[#4ade80]',,
+    'bg-[#a16207]',
+  ],
   plugins: [],
 }
