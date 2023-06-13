@@ -4,6 +4,7 @@ import Calender from "../../components/template/calender/calender"
 import { dungeonsWeek } from "@/app/api/data/dungeons"
 import Content from "../../components/template/content"
 import { useState } from "react"
+import ItemButton from "@/app/components/itemButton"
 
 interface CalenderContentProps {
 
@@ -18,12 +19,7 @@ const CalenderContent = (props: CalenderContentProps) =>{
             <div className="flex gap-5 mt-6 ml-4">
                 
                 {dungeonsWeek.map((item:any)=>(
-                    <button className={`border-4 border-ddFour text-ddFour font-bold p-1 hover:bg-ddFirst hover:text-ddSec hover:border-none hover:cursor-pointer
-                        ${currentDay.id === item.id && "bg-ddFirst text-ddSec border-none"}
-                    `}
-                        onClick={()=>{setCurrentDay(dungeonsWeek[item.id])}}
-                        key={item.id}
-                    >{item.day}</button>
+                    <ItemButton label={item.day} key={item.id} active={currentDay.id === item.id } onClick={()=>{setCurrentDay(dungeonsWeek[item.id])}}/>
                 ))}
             </div>
                         
