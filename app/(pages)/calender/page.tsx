@@ -15,7 +15,7 @@ const CalenderContent = (props: CalenderContentProps) =>{
                 <button className="border-4 border-ddFour text-ddFour font-bold p-1">Semanal</button>
             </div>
 
-            <Calender dayDungeons={dungeonsWeek[0]}/>
+            <Calender dayDungeons={dungeonsWeek[1]}/>
         </Content>
     )
 }

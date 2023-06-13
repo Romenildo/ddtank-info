@@ -7,8 +7,6 @@ interface CalenderProps {
 }
 
 const Calender = (props: CalenderProps) =>{
-    console.log(props.dayDungeons)
-
     const renderCards = (items: any) => {
         return(
             <>
@@ -20,7 +18,7 @@ const Calender = (props: CalenderProps) =>{
     }
     return (
         <div>
-            <h1 className="text-2xl font-bold text-ddFive p-3">{props.dayDungeons.name}</h1>
+            <h1 className="text-2xl font-bold text-ddFive p-3">{props.dayDungeons.day}</h1>
 
             <div className="flex gap-4">
                 <CardCalender>Tesouro</CardCalender>
