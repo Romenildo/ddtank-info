@@ -12,22 +12,30 @@ interface JewelProps {
 const Jewel = (props: JewelProps) =>{
     return (
         <Content>
-            <Link href="/guides">
-                <ItemButton label="Voltar" className="p-5 m-2 "/>
-            </Link>
+            <div className="flex items-center w-full gap-10">
+                <Link href="/guides">
+                    <ItemButton label="Voltar" className="p-5 m-2 "/>
+                </Link>
+                <h1 className="text-ddFirst text-[2rem] font-bold">Informações sobre as joiás</h1>
+            </div>
+            
             <div className="flex flex-col items-center">
-                <table className="border-collapse  border-2 border-ddFirst">
+                <table className="border-collapse  border-2 border-ddFirst m-4">
                     <thead>
-                        <tr>
-                            <th className="border-2 border-ddFirst" >Atributo</th>
-                            <th className="border-2 border-ddFirst">Informações</th>
+                        <tr className="bg-ddactive">
+                            <th className="border-2 border-ddFirst p-2 text-lg" >Atributo</th>
+                            <th className="border-2 border-ddFirst p-2 text-lg">Informações</th>
                         </tr>
                     </thead>
                     <tbody>
                         {jewelInfos.map((item)=>(
-                            <tr key={item.id}>
-                                <td className="border-2 border-ddFirst p-1 text-center">{item.name}</td>
-                                <td className="border-2 border-ddFirst p-1 pl-2">{item.info}</td>
+                            <tr key={item.id} className={`bg-opacity-40
+                                                        ${item.type === "attack" && "bg-[#f59e0b]"}
+                                                        ${item.type === "defense" && "bg-[#3b82f6]"}
+                                                        ${item.type === "special" && "bg-[#a21caf]"} `}
+                            >
+                                <td className="border-2 border-ddFirst p-2 text-center">{item.name}</td>
+                                <td className="border-2 border-ddFirst p-2 pl-2">{item.info}</td>
                             </tr>
                         ))}
                     </tbody>
