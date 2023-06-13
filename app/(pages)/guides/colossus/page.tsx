@@ -24,14 +24,14 @@ const Colossus = (props: ColossusProps) =>{
             <div className="flex flex-col overflow-x-auto">
                 <table className="border-separate  border-2 border-ddFirst  border-spacing-[4px] ">
                     <thead>
-                        <tr className="bg-ddactive">
-                            <th className="border-2 border-ddFirst p-2 text-lg" >Imagem Inicial</th>
-                            <th className="border-2 border-ddFirst p-2 text-lg">Imagem Final</th>
-                            <th className="border-2 border-ddFirst p-2 text-lg">Nome</th>
-                            <th className="border-2 border-ddFirst p-2 text-lg">Tipo Colosso</th>
-                            <th className="border-2 border-ddFirst p-2 text-lg">Mais dano</th>
-                            <th className="border-2 border-ddFirst p-2 text-lg">Menos dano</th>
-                            <th className="border-2 border-ddFirst p-2 text-lg">Danos</th>
+                        <tr className="bg-ddactive text-lg">
+                            <th className="border-2 border-ddFirst p-2" >Imagem Inicial</th>
+                            <th className="border-2 border-ddFirst">Imagem Final</th>
+                            <th className="border-2 border-ddFirst">Nome</th>
+                            <th className="border-2 border-ddFirst">Tipo Colosso</th>
+                            <th className="border-2 border-ddFirst">Mais dano</th>
+                            <th className="border-2 border-ddFirst">Menos dano</th>
+                            <th className="border-2 border-ddFirst">Danos</th>
                         </tr>
                     </thead>
                     <tbody>

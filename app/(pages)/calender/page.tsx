@@ -19,7 +19,7 @@ const CalenderContent = (props: CalenderContentProps) =>{
             <div className="flex gap-5 mt-6 ml-4">
                 
                 {dungeonsWeek.map((item:any)=>(
-                    <ItemButton label={item.day} key={item.id} active={currentDay.id === item.id } onClick={()=>{setCurrentDay(dungeonsWeek[item.id])}}/>
+                    <ItemButton label={item.day} key={item.id} active={currentDay.id === item.id } onClick={()=>{setCurrentDay(dungeonsWeek[item.id])}} className={"min-w-[110px]"}/>
                 ))}
             </div>
                         
