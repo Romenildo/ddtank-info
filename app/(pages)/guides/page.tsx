@@ -17,6 +17,15 @@ const Guides = (props: GuidesProps) =>{
                 <Link href="/guides/monts">
                     <ItemMenu url="/images/menu/mont.png" label="Montarias"/>
                 </Link>
+                <Link href="/guides/weapon">
+                    <ItemMenu url="/images/menu/weapon.png" label="Armas"/>
+                </Link>
+                <Link href="/guides/pets">
+                    <ItemMenu url="/images/menu/pets.png" label="Mascotes"/>
+                </Link>
+                <Link href="/guides/array">
+                    <ItemMenu url="/images/menu/array.png" label="Array"/>
+                </Link>
                 
                 
             </div>
