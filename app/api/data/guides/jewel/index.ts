@@ -1,0 +1,28 @@
+
+
+export const jewelInfos = [
+    {id:0, name: "Ataque", type:"attack", info: "Aumenta o Ataque base"},
+    {id:1, name: "Taxa de Crítico", type:"attack", info: "Aumenta a chance de dar crítico"},
+    {id:2, name: "Dano Crítico", type:"attack", info: "Aumenta o Dano do crítico ao critar"},
+    {id:3, name: "Ataque Elemental", type:"attack", info: "Aumenta dano do elemento em Porcentagem"},
+    {id:4, name: "Penetração Elem", type:"attack", info: "Aumenta a Penetração(Pierce) por dano Elemental"},
+    {id:5, name: "Puncão", type:"attack", info: "Reduz a chance do inimigo resistir"},
+    {id:6, name: "Pierce", type:"attack", info: "Reduz armadura ao causar dano"},
+    {id:7, name: "Válido(Acerto)", type:"attack", info: "Aumenta a chance de debuff"},
+    {id:8, name: "Resitir (Penetração)", type:"attack", info: "Reduz a Resistencia a dano do inimigo"},
+    {id:9, name: "Hp", type:"defense", info: "Aumenta o HP máximo"},
+    {id:10, name: "Armadura(Defesa)", type:"defense", info: "Reduz o dano de acordo com a porcentagem"},
+    {id:11, name: "Resistir (Taxa de Resistir)", type:"defense", info: "Aumenta chance de resistir(Resistir a um dano, diminui o dano recebido)"},
+    {id:12, name: "Resistir a dano", type:"defense", info: "Aumenta o dano reduzido???"},
+    {id:13, name: "Tenacidade", type:"defense", info: "Reduz a chance de crítico do oponente"},
+    {id:14, name: "Elem. Resistir", type:"defense", info: "Reduz o dano elemental recebido"},
+    {id:15, name: "Hp da montaria", type:"defense", info: "Aumenta o Hp da montaria"},
+    {id:16, name: "Resist. Criticos", type:"defense", info: "Diminui o dano crítico recebido"},
+    {id:17, name: "Inválido", type:"defense", info: "Reduz a chance de acerto do inimigo(Válido)(Resistir a efeitos)"},
+    {id:18, name: "Velocidade", type:"special", info: "Aumenta a velocidade(quem tiver mais joga primeiro)"},
+    {id:19, name: "Cura", type:"special", info: "Cura a % em Hp ao inicio de cada rodada"},
+    {id:20, name: "Fogo intenso", type:"special", info: "Atacar e resistir Penetração"},
+    {id:21, name: "Poder", type:"special", info: "Pierce e Conversão de elemento"},
+    {id:22, name: "Montaria", type:"special", info: "Hp da montaria e redução de dano da montaria"},
+    {id:23, name: "Habilidade", type:"special", info: "Resistir Penetração(Ataque) e Resistir criticos(defesa)"},
+]
