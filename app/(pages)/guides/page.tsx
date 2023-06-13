@@ -10,7 +10,7 @@ interface GuidesProps {
 const Guides = (props: GuidesProps) =>{
     return (
         <Content>
-            <div className="flex p-2 gap-4">
+            <div className="flex p-5 gap-5 flex-wrap items-center ml-16">
                 <Link href="/guides/jewel">
                     <ItemMenu url="/images/menu/jewel.png" label="Joiás"/>
                 </Link>
@@ -25,6 +25,9 @@ const Guides = (props: GuidesProps) =>{
                 </Link>
                 <Link href="/guides/array">
                     <ItemMenu url="/images/menu/array.png" label="Array"/>
+                </Link>
+                <Link href="/guides/colossus">
+                    <ItemMenu url="/images/menu/colossus.png" label="Colosso"/>
                 </Link>
                 
                 
