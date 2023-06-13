@@ -1,3 +1,5 @@
+import Footer from './components/template/footer'
+import Header from './components/template/header'
 import './globals.css'
 
 export const metadata = {
@@ -12,7 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='bg-gray'>
-      <body className='w-[980px] flex flex-col m-auto'>{children}</body>
+      <body className='w-[980px] flex flex-col m-auto'>
+        <Header />
+          {children}
+        <Footer/>
+        </body>
     </html>
   )
 }

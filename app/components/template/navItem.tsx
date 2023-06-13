@@ -1,18 +1,22 @@
 'use client'
 
-import { Link } from "react-router-dom"
+import Link from "next/link"
 
 interface NavItemProps {
     children: any
     href: string
     active?: boolean
+    value?: string
     onClick?: () => void
 }
 
 const NavItem = (props: NavItemProps) =>{
+
+
     return (
-        <Link 
-            to={props.href}
+        <li>
+            <Link 
+            href={props.href}
             className={`
             px-5 pb-1 pt-5
             bg-ddFour font-bold text-ddFive text-xl
@@ -22,6 +26,7 @@ const NavItem = (props: NavItemProps) =>{
             `}
             onClick={props.onClick}
         >{props.children}</Link>
+        </li>  
     )
 }
 

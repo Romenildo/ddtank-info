@@ -1,4 +1,4 @@
-import Content from "../components/template/content"
+import Content from "../../components/template/content"
 
 
 interface MainProps {

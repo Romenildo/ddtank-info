@@ -1,23 +1,31 @@
 import { useMemo } from "react";
-import { useLocation } from "react-router-dom"
+import { usePathname } from "next/navigation";
 
-//cria um array na memoria ja com as informacoes das rotas
+
 const useRoutes = () => {
-  const pathname = useLocation().pathname
+ 
+  const pathname = usePathname();
+
   const routes = useMemo(() => [
     { 
-      label: 'Principal', 
-      href: '/', 
-      active: pathname === '/'
+      label: 'Principal',
+      href: '/main',  
+      active: pathname === '/main'
     },
     { 
       label: 'Calendário', 
-      href: '/calender', 
+      href:'/calender',
       active: pathname === '/calender'
+    },
+    { 
+      label: 'Guias', 
+      href:'/guides',
+      active: pathname === '/guides'
     },
   ], [pathname]);
 
-  return routes;
+  return routes
 };
+
 
 export default useRoutes;

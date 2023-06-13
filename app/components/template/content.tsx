@@ -7,7 +7,7 @@ interface ContentProps {
 const Content = (props: ContentProps) =>{
     return (
         <main className="bg-ddSec border-[3px] border-ddFirst">
-        {props.children}
+            {props.children}
         </main>
     )
 }

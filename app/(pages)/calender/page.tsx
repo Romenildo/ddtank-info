@@ -1,7 +1,7 @@
-import Calender from "../components/template/calender/calender"
+import Calender from "../../components/template/calender/calender"
 
 import { dungeonsWeek } from "@/app/api/data/dungeons"
-import Content from "../components/template/content"
+import Content from "../../components/template/content"
 
 interface CalenderContentProps {
 
