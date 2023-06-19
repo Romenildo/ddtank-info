@@ -29,6 +29,9 @@ const Guides = (props: GuidesProps) =>{
                 <Link href="/guides/colossus">
                     <ItemMenu url="/images/menu/colossus.png" label="Colosso"/>
                 </Link>
+                <Link href="/guides/equip">
+                    <ItemMenu url="/images/menu/equipament.png" label="Equipamentos"/>
+                </Link>
             </div>
         </Content>
     )

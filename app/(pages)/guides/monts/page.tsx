@@ -27,7 +27,7 @@ const Monts = (props: MontsProps) =>{
                 ))}
             </ul>
             <p className="p-2 text-[0.8rem] text-ddFive">
-                Obs: As trdução foram feitas a partir de chines para portugues pelo google tradutor, As informações ainda vao passar por mais revisões
+                Obs: As tradução foram feitas a partir de chines para portugues pelo google tradutor, As informações ainda vao passar por revisões e melhorias
             </p>
             
             
