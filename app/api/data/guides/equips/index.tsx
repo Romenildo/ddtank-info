@@ -4,7 +4,7 @@ export const equipInfos = [
     {
         id:0, 
         name: "Dente de Sangue", 
-        url:"/images/guide/equips/bloodtooth.png", 
+        url:"/images/guide/equips/bloodTooth.png", 
         porcent: "47/100", 
         detail:{
             effect1: "(2/6) Roubo de Vida +10%", 
