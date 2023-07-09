@@ -10,17 +10,32 @@ const useRoutes = () => {
     { 
       label: 'Principal',
       href: '/main',  
-      active: pathname === '/main'
+      active: pathname === '/main',
+      special: false
     },
     { 
       label: 'Calendário', 
       href:'/calender',
-      active: pathname === '/calender'
+      active: pathname === '/calender',
+      special: false
     },
     { 
       label: 'Guias', 
       href:'/guides',
-      active: pathname === '/guides'
+      active: pathname === '/guides',
+      special: false
+    },
+    { 
+      label: 'Pináculo', 
+      href:'/pinnacle',
+      active: pathname === '/pinnacle',
+      special: false
+    },
+    { 
+      label: 'Roleta', 
+      href:'/wheel',
+      active: pathname === '/wheel',
+      special: true
     },
   ], [pathname]);
 

@@ -8,6 +8,7 @@ interface NavItemProps {
     active?: boolean
     value?: string
     onClick?: () => void
+    special?: string
 }
 
 const NavItem = (props: NavItemProps) =>{
@@ -22,6 +23,7 @@ const NavItem = (props: NavItemProps) =>{
             bg-ddFour font-bold text-ddFive text-xl
             border-2 border-ddTer rounded-t-3xl
             hover:scale-[1.1] hover:cursor-pointer hover:text-white
+            ${props.special && 'bg-purple text-white'}
             ${props.active && 'bg-ddactive text-white scale-[1.1]'}
             `}
             onClick={props.onClick}

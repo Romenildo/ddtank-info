@@ -17,7 +17,8 @@ module.exports = {
       'ddFive': '#9f6a2c',
       'ddactive': '#fc9c46',
       'gray': '#3f3f46',
-      'white': '#f4f4f5'
+      'white': '#f4f4f5',
+      'purple': '#a855f7'
       
     },
   },
@@ -26,6 +27,7 @@ module.exports = {
     'bg-[#3b82f6]',,
     'bg-[#4ade80]',,
     'bg-[#a16207]',
+    'bg-[#a855f7]'
   ],
   plugins: [],
 }

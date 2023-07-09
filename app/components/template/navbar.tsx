@@ -16,7 +16,7 @@ const NavBar = (props: NavBarProps) =>{
         <nav className="relative top-[70%] w-fit">
             <ul className="flex gap-4 pl-2">
                 {routes.map((item:any)=>(
-                    <NavItem key={item.label} href={item.href} active={item.active} value={item.value}>{item.label}</NavItem>
+                    <NavItem key={item.label} href={item.href} active={item.active} value={item.value} special={item.special}>{item.label}</NavItem>
                 ))}
             </ul>
         </nav>
