@@ -4,7 +4,6 @@ import Image from "next/image"
 interface ItemButtonProps {
     label: string
     active?: boolean
-    key?: any
     onClick?: () => any
     className?: any
 }
@@ -16,7 +15,6 @@ const ItemButton = (props: ItemButtonProps) =>{
                         ${props.className}
                     `}
                         onClick={props.onClick}
-                        key={props.key}
                     >{props.label}</button>
     )
 }

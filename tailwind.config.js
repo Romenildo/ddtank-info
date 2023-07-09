@@ -6,7 +6,11 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:{
+        'classificationTable': "url('/images/pinnacleBg.png')"
+      }
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -18,7 +22,8 @@ module.exports = {
       'ddactive': '#fc9c46',
       'gray': '#3f3f46',
       'white': '#f4f4f5',
-      'purple': '#a855f7'
+      'purple': '#a855f7',
+      'red': '#b91c1c'
       
     },
   },
